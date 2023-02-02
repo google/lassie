@@ -37,13 +37,13 @@ pip install -r requirements.txt
 
 ## LASSIE optimization
 
-To run LASSIE optimization on sparse images of an animal class (e.g. horse), simply run:
+To run LASSIE optimization on sparse images of an animal class (e.g. zebra), simply run:
 
 ```
-python train.py --cls horse
+python train.py --cls zebra
 ```
 
-The qualitative results can be found in `results/horse/`. The optimization settings and initial 3D skeleton can be changed in `main/config.py` and `main/skeleton.py`, respectively.
+The qualitative results can be found in `results/zebra/`. The optimization settings and initial 3D skeleton can be changed in `main/config.py` and `main/skeleton.py`, respectively.
 
 
 ## Evaluation
@@ -51,10 +51,10 @@ The qualitative results can be found in `results/horse/`. The optimization setti
 Once optimization is completed, quantitative evaluation can be done by running:
 
 ```
-python eval.py --cls horse
+python eval.py --cls zebra
 ```
 
-The results will be stored in `results/eval/horse.txt`.
+The results will be stored in `results/eval/zebra.txt`.
 
 
 ## Citation
