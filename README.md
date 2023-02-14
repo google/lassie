@@ -43,7 +43,7 @@ To run LASSIE optimization on sparse images of an animal class (e.g. zebra), sim
 python train.py --cls zebra
 ```
 
-The qualitative results can be found in `results/zebra/`. The optimization settings and initial 3D skeleton can be changed in `main/config.py` and `main/skeleton.py`, respectively.
+The supported animal classes include: zebra, giraffe, tiger, elephant, kangaroo, penguin, horse, cow, sheep. The qualitative results can be found in `results/zebra/`. The optimization settings and initial 3D skeleton can be changed in `main/config.py` and `main/skeleton.py`, respectively.
 
 
 ## Evaluation
