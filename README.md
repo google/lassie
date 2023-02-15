@@ -49,8 +49,7 @@ To run LASSIE optimization on sparse images of an animal class (e.g. zebra), sim
 python train.py --cls zebra
 ```
 
-The supported animal classes include: zebra, giraffe, tiger, elephant, kangaroo, penguin, horse, cow, sheep. The qualitative results can be found in `results/zebra/`. The optimization settings and initial 3D skeleton can be changed in `main/config.py` and `main/skeleton.py`, respectively. Note that the first time running LASSIE optimization could take a few minutes in the DINO feature clustering step. To speed it up, consider setting `OMP_NUM_THREADS=1`.
-
+The supported animal classes include: zebra, giraffe, tiger, elephant, kangaroo, penguin, horse, cow, sheep. The qualitative results can be found in `results/zebra/`. The optimization settings and initial 3D skeleton can be changed in `main/config.py` and `main/skeleton.py`, respectively. Note that the first time running LASSIE optimization could take a few minutes in the DINO feature clustering step.
 
 ## Evaluation
 
