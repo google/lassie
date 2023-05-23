@@ -7,7 +7,7 @@ imageio==2.22.0
 matplotlib==3.5.3
 Pillow==9.3.0
 PyYAML==6.0
-requests==2.28.1
+requests==2.31.0
 scipy==1.7.3
 scikit-image==0.19.3
 pydensecrf @ git+https://github.com/lucasb-eyer/pydensecrf.git@0d53acbcf5123d4c88040fe68fbb9805fc5b2fb9
