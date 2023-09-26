@@ -116,7 +116,18 @@ class Renderer():
                     verts_color = self.part_color[None,part_idx,None,:].repeat(bs,1,nv,1)
             verts_color = verts_color.permute(0,3,1,2).reshape(bs,3,-1).permute(0,2,1)
             mesh = Meshes(verts=verts_combined, faces=faces_combined, textures=Textures(verts_rgb=verts_color))
+        def save_mesh_as_obj(mesh, filename):
+            from pytorch3d.io import save_obj
+            # mesh.verts_packed() gives us a tensor of shape (V, 3) where V is the total number of vertices in the mesh
+            verts = mesh.verts_packed()
+            # mesh.faces_packed() gives us a tensor of shape (F, 3) where F is the total number of faces in the mesh
+            faces = mesh.faces_packed()
+    
+            save_obj(filename, verts, faces)
 
+# mesh = Meshes(verts=verts_combined, faces=faces_combined, textures=Textures(verts_rgb=verts_color))
+
+        save_mesh_as_obj(mesh, "{}.obj".format(cfg.animal_class))
         return self.renderer(mesh)
 
     def project(self, x):
